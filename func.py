@@ -20,3 +20,11 @@ def getT0(plan, vertex):
         E.clear()
 
     return T0
+
+
+def getS(T0, plan):
+    S = []
+    for i in range(0,len(plan)):
+        S.append(T0[plan[i][1]] - T0[plan[i][0]] - plan[i][2])
+
+    return S

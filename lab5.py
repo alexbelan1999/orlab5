@@ -7,5 +7,8 @@ plan = [[0, 1, 8],[0, 2, 10],[0, 3, 4],
         [6, 7, 3]]
 
 vertex = 8
+T0 = func.getT0(plan,vertex)
+print('T0: ',T0)
 
-print('T0: ',func.getT0(plan,vertex))
+S  = func.getS(T0,plan)
+print('S: ',S)
