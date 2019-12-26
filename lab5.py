@@ -12,3 +12,6 @@ print('T0: ',T0)
 
 S  = func.getS(T0,plan)
 print('S: ',S)
+
+T1  = func.getT1(plan,vertex,T0)
+print('T1: ',T1)
