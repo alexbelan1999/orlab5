@@ -54,3 +54,10 @@ def getT1(plan, vertex, T0):
 
     T1[event] = 0
     return T1
+
+
+def getP(T1, plan, T0):
+    P = []
+    for i in range(len(plan)):
+        P.append(T1[plan[i][1]] - T0[plan[i][0]] - plan[i][2])
+    return P
