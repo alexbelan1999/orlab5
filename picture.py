@@ -63,6 +63,8 @@ plt.ylabel('Работы')
 plt.show()
 fig.savefig("рисунок 1.png", dpi=300, qualite=100)
 
+fig1 = plt.figure()
+ax1 = fig1.add_subplot(1, 1, 1)
 x = np.arange(0, 12 + step, step)
 x1 = np.arange(9, 18 + step, step)
 x2 = np.arange(27, 39 + step, step)
@@ -75,8 +77,6 @@ x8 = np.arange(31, 39 + step, step)
 x9 = np.arange(37, 42 + step, step)
 x10 = np.arange(39, 42 + step, step)
 
-fig1 = plt.figure()
-ax1 = fig1.add_subplot(1, 1, 1)
 y = 1 + x * 0
 y1 = 2 + x1 * 0
 y2 = 3 + x2 * 0
@@ -121,3 +121,59 @@ plt.xlabel('Время')
 plt.ylabel('Работы')
 plt.show()
 fig1.savefig("рисунок 2.png", dpi=300, qualite=100)
+
+fig2 = plt.figure()
+ax2 = fig2.add_subplot(1, 1, 1)
+x = np.arange(0, 9 + step, step)
+x1 = np.arange(9, 12 + step, step)
+x2 = np.arange(12, 13 + step, step)
+x3 = np.arange(13, 22 + step, step)
+x4 = np.arange(22, 30 + step, step)
+x5 = np.arange(30, 31 + step, step)
+x6 = np.arange(31, 36 + step, step)
+x7 = np.arange(36, 39 + step, step)
+x8 = np.arange(39, 42 + step, step)
+x9 = np.arange(0, 44, 1)
+
+y = 10 + x * 0
+y1 = 9 + x1 * 0
+y2 = 10 + x2 * 0
+y3 = 9 + x3 * 0
+y4 = 6 + x4 * 0
+y5 = 2 + x5 * 0
+y6 = 10 + x6 * 0
+y7 = 5 + x7 * 0
+y8 = 3 + x8 * 0
+y9 = 8.9 + x9 * 0
+
+plt.text(0, 10.1, '10', fontsize=fontsize)
+ax2.plot(x, y, 'k')
+plt.text(9, 9.1, '9', fontsize=fontsize)
+ax2.plot(x1, y1, 'k')
+plt.text(12, 10.1, '10', fontsize=fontsize)
+ax2.plot(x2, y2, 'k')
+plt.text(13, 9.1, '9', fontsize=fontsize)
+ax2.plot(x3, y3, 'k')
+plt.text(22, 6.1, '6', fontsize=fontsize)
+ax2.plot(x4, y4, 'k')
+plt.text(30, 2.1, '2', fontsize=fontsize)
+ax2.plot(x5, y5, 'k')
+plt.text(31, 10.1, '10', fontsize=fontsize)
+ax2.plot(x6, y6, 'k')
+plt.text(36, 5.1, '5', fontsize=fontsize)
+ax2.plot(x7, y7, 'k')
+plt.text(39, 3.1, '3', fontsize=fontsize)
+ax2.plot(x8, y8, 'k')
+plt.text(40, 9.1, 'R = 9', fontsize=fontsize)
+ax2.plot(x9, y9, 'k--')
+
+plt.minorticks_on()
+plt.title('Рисунок 3')
+plt.grid(True)
+
+plt.xticks(np.arange(0, 48, 2), np.arange(0, 48, 2))
+plt.yticks(np.arange(0, 13, 1), np.arange(0, 13, 1))
+plt.xlabel('Время')
+plt.ylabel('Суммарное потребление')
+plt.show()
+fig2.savefig("рисунок 3.png", dpi=300, qualite=100)
