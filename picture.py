@@ -319,3 +319,63 @@ x10 = np.arange(43, 48 + step, step)
 y10 = 10 + x10 * 0
 ax3.plot(x10, y10, 'b+')
 fig3.savefig("рисунок 9.png", dpi=300, qualite=100)
+
+fig5 = plt.figure()
+ax5 = fig5.add_subplot(1, 1, 1)
+
+x = np.arange(0, 12 + step, step) #p01
+x1 = np.arange(0, 9 + step, step) #p02
+x2 = np.arange(22, 34 + step, step) #p06
+x3 = np.arange(12, 22 + step, step) #p13
+x4 = np.arange(22, 26 + step, step) #p24
+x5 = 22 #p34
+x6 = np.arange(22, 30 + step, step) #p37
+x7 = np.arange(26, 35 + step, step) #p45
+x8 = np.arange(35, 43 + step, step) #p56
+x9 = np.arange(43, 48 + step, step) #p57
+x10 = np.arange(43, 46 + step, step) #p67
+
+y = 1 + x * 0
+y1 = 2 + x1 * 0
+y2 = 3 + x2 * 0
+y3 = 4 + x3 * 0
+y4 = 5 + x4 * 0
+y5 = 6 + x5 * 0
+y6 = 7 + x6 * 0
+y7 = 8 + x7 * 0
+y8 = 9 + x8 * 0
+y9 = 10 + x9 * 0
+y10 = 11 + x10 * 0
+
+plt.text(0, 1.1, '(p(0),p(1) 5', fontsize=fontsize)
+ax5.plot(x, y, 'k')
+plt.text(0, 2.1, '(p(0),p(2) 2', fontsize=fontsize)
+ax5.plot(x1, y1, 'k')
+plt.text(22, 3.1, '(p(0),p(6) 3', fontsize=fontsize)
+ax5.plot(x2, y2, 'k')
+plt.text(12, 4.1, '(p(1),p(3) 9', fontsize=fontsize)
+ax5.plot(x3, y3, 'k')
+plt.text(22, 5.1, '(p(2),p(4) 1', fontsize=fontsize)
+ax5.plot(x4, y4, 'k')
+plt.text(22, 6.1, '(p(3),p(4)', fontsize=fontsize)
+ax5.plot(x5, y5, 'k.')
+plt.text(22, 7.1, '(p(3),p(7) 4', fontsize=fontsize)
+ax5.plot(x6, y6, 'k')
+plt.text(26, 8.1, '(p(4),p(5) 2', fontsize=fontsize)
+ax5.plot(x7, y7, 'k')
+plt.text(35, 9.1, '(p(5),p(6) 5', fontsize=fontsize)
+ax5.plot(x8, y8, 'k')
+plt.text(43, 10.1, '(p(5),p(7) 5', fontsize=fontsize)
+ax5.plot(x9, y9, 'k')
+plt.text(43, 11.1, '(p(6),p(7) 3', fontsize=fontsize)
+ax5.plot(x10, y10, 'k')
+plt.minorticks_on()
+plt.title('Рисунок 6')
+plt.grid(True)
+
+plt.xticks(np.arange(0, 52, 2), np.arange(0, 52, 2))
+plt.yticks(np.arange(0, 13, 1), np.arange(0, 13, 1))
+plt.xlabel('Время')
+plt.ylabel('Работы')
+plt.show()
+fig5.savefig("рисунок 10.png", dpi=300, qualite=100)
