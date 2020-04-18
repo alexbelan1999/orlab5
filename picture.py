@@ -194,17 +194,17 @@ fig.savefig("рисунок 5.png", dpi=300, qualite=100)
 fig3 = plt.figure()
 ax3 = fig3.add_subplot(1, 1, 1)
 
-x = np.arange(0, 12 + step, step) #p01
-x1 = np.arange(0, 9 + step, step) #p02
-x2 = np.arange(22, 34 + step, step) #p06
-x3 = np.arange(12, 22 + step, step) #p13
-x4 = np.arange(22, 26 + step, step) #p24
-x5 = 22 #p34
-x6 = np.arange(22, 30 + step, step) #p37
-x7 = np.arange(26, 35 + step, step) #p45
-x8 = np.arange(35, 43 + step, step) #p56
-x9 = np.arange(35, 40 + step, step) #p57
-x10 = np.arange(43, 46 + step, step) #p67
+x = np.arange(0, 12 + step, step)  # p01
+x1 = np.arange(0, 9 + step, step)  # p02
+x2 = np.arange(22, 34 + step, step)  # p06
+x3 = np.arange(12, 22 + step, step)  # p13
+x4 = np.arange(22, 26 + step, step)  # p24
+x5 = 22  # p34
+x6 = np.arange(22, 30 + step, step)  # p37
+x7 = np.arange(26, 35 + step, step)  # p45
+x8 = np.arange(35, 43 + step, step)  # p56
+x9 = np.arange(35, 40 + step, step)  # p57
+x10 = np.arange(43, 46 + step, step)  # p67
 
 y = 1 + x * 0
 y1 = 2 + x1 * 0
@@ -253,17 +253,17 @@ fig3.savefig("рисунок 6.png", dpi=300, qualite=100)
 
 fig4 = plt.figure()
 ax4 = fig4.add_subplot(1, 1, 1)
-x = np.arange(0, 12 + step, step) #p01
-x1 = np.arange(13, 22 + step, step) #p02
-x2 = np.arange(31, 43 + step, step) #p06
-x3 = np.arange(12, 22 + step, step) #p13
-x4 = np.arange(22, 26 + step, step) #p24
-x5 = 22 #p34
-x6 = np.arange(38, 46 + step, step) #p37
-x7 = np.arange(26, 35 + step, step) #p45
-x8 = np.arange(35, 43 + step, step) #p56
-x9 = np.arange(41, 46 + step, step) #p57
-x10 = np.arange(43, 46 + step, step) #p67
+x = np.arange(0, 12 + step, step)  # p01
+x1 = np.arange(13, 22 + step, step)  # p02
+x2 = np.arange(31, 43 + step, step)  # p06
+x3 = np.arange(12, 22 + step, step)  # p13
+x4 = np.arange(22, 26 + step, step)  # p24
+x5 = 22  # p34
+x6 = np.arange(38, 46 + step, step)  # p37
+x7 = np.arange(26, 35 + step, step)  # p45
+x8 = np.arange(35, 43 + step, step)  # p56
+x9 = np.arange(41, 46 + step, step)  # p57
+x10 = np.arange(43, 46 + step, step)  # p67
 
 y = 1 + x * 0
 y1 = 2 + x1 * 0
@@ -323,17 +323,17 @@ fig3.savefig("рисунок 9.png", dpi=300, qualite=100)
 fig5 = plt.figure()
 ax5 = fig5.add_subplot(1, 1, 1)
 
-x = np.arange(0, 12 + step, step) #p01
-x1 = np.arange(0, 9 + step, step) #p02
-x2 = np.arange(22, 34 + step, step) #p06
-x3 = np.arange(12, 22 + step, step) #p13
-x4 = np.arange(22, 26 + step, step) #p24
-x5 = 22 #p34
-x6 = np.arange(22, 30 + step, step) #p37
-x7 = np.arange(26, 35 + step, step) #p45
-x8 = np.arange(35, 43 + step, step) #p56
-x9 = np.arange(43, 48 + step, step) #p57
-x10 = np.arange(43, 46 + step, step) #p67
+x = np.arange(0, 12 + step, step)  # p01
+x1 = np.arange(0, 9 + step, step)  # p02
+x2 = np.arange(22, 34 + step, step)  # p06
+x3 = np.arange(12, 22 + step, step)  # p13
+x4 = np.arange(22, 26 + step, step)  # p24
+x5 = 22  # p34
+x6 = np.arange(22, 30 + step, step)  # p37
+x7 = np.arange(26, 35 + step, step)  # p45
+x8 = np.arange(35, 43 + step, step)  # p56
+x9 = np.arange(43, 48 + step, step)  # p57
+x10 = np.arange(43, 46 + step, step)  # p67
 
 y = 1 + x * 0
 y1 = 2 + x1 * 0
@@ -382,17 +382,17 @@ fig5.savefig("рисунок 10.png", dpi=300, qualite=100)
 
 fig6 = plt.figure()
 ax6 = fig6.add_subplot(1, 1, 1)
-x = np.arange(6, 18 + step, step) #p01
-x1 = np.arange(15, 24 + step, step) #p02
-x2 = np.arange(33, 45 + step, step) #p06
-x3 = np.arange(18, 28 + step, step) #p13
-x4 = np.arange(24, 28 + step, step) #p24
-x5 = 28 #p34
-x6 = np.arange(40, 48 + step, step) #p37
-x7 = np.arange(28, 37 + step, step) #p45
-x8 = np.arange(37, 45 + step, step) #p56
-x9 = np.arange(43, 48 + step, step) #p57
-x10 = np.arange(45, 48 + step, step) #p67
+x = np.arange(6, 18 + step, step)  # p01
+x1 = np.arange(15, 24 + step, step)  # p02
+x2 = np.arange(33, 45 + step, step)  # p06
+x3 = np.arange(18, 28 + step, step)  # p13
+x4 = np.arange(24, 28 + step, step)  # p24
+x5 = 28  # p34
+x6 = np.arange(40, 48 + step, step)  # p37
+x7 = np.arange(28, 37 + step, step)  # p45
+x8 = np.arange(37, 45 + step, step)  # p56
+x9 = np.arange(43, 48 + step, step)  # p57
+x10 = np.arange(45, 48 + step, step)  # p67
 
 y = 1 + x * 0
 y1 = 2 + x1 * 0
